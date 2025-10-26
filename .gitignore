@@ -1,3 +1,28 @@
-/idea
-/venv
+cat > .gitignore << 'EOF'
+# Virtual env & IDE
+venv/
+.idea/
+__pycache__/
+*.pyc
+
+# Data folders
+data/raw/
+data/interim/
+data/processed/
+
+# Models & weights
+models/weights/
+weights/
+
+# Third-party repos
+third_party/
+
+# Outputs
+*.png
+*.tif
 *.tiff
+*.jpg
+
+# Temporary scripts
+concept_proof.py
+EOF
